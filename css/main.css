@@ -1,5 +1,323 @@
+/* ------------------------------------------------------ Basic styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
 body {
     color: #d5ead2;
     font-family: Arial, Helvetica, sans-serif;
     background: #17313a;
+}
+
+.page {
+    width: 808px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 75px;
+}
+
+.header {
+    background: url("../img/hat.jpg") no-repeat 210px 0;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.header::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.logo {
+    margin: 55px 0 45px 0;
+    display: inline-block;
+}
+
+.features {
+    width: 192px;
+    background: linear-gradient(180deg, #beebb2, #5a9752);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.demo {
+    width: 171px;
+    background: linear-gradient(180deg, #b3e9eb, #237e83);
+}
+
+.requirements {
+    width: 171px;
+    background: linear-gradient(180deg, #eacfb2, #c35838);
+}
+
+.support {
+    width: 192px;
+    background: linear-gradient(180deg, #d4e392, #666f16);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: normal;
+    color: #5c9147;
+}
+
+.column {
+    float: left;
+    border-left: 1px dashed #757b82;
+    padding: 7px 0 55px 0;
+    color: #beebb3;
+}
+
+.window {
+    width: 230px;
+    height: 165px;
+    float: left;
+    margin: 0 15px 25px;
+    color: #25b0eb;
+}
+
+.field {
+    margin-bottom: 11px;
+}
+
+input,
+textarea {
+    width: 252px ;
+    padding: 4px;
+    font-family: Time New Roman, serif;
+    background: #beebb3;
+    margin-left: 8px;
+    border: none;
+}
+
+input:hover,
+textarea:hover {
+    background: #899f86;
+    border: 1px solid white;
+}
+
+textarea {
+    width: 419px;
+    resize: none;
+}
+
+button {
+    width: 120px;
+    height: 25px;
+    background-color: #5b9854;
+    border: 1px solid #beebb3;
+    margin-left: 130px;
+    color: #beebb3;
+    font-size: 16px;
+}
+
+label {
+    width: 110px;
+    padding-right: 7px;
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    color: #beebb3;
+    margin-left: 5px;
+}
+
+.footer {
+    width: 100%;
+    height: 63px;
+    position: absolute;
+    bottom: 0;
+    padding: 8px;
+    text-align: center;
+    border-top: 1px solid white;
+    color: white;
+}
+
+/*------------------------------------------- Header */
+
+.page--services .header {
+    margin-bottom: 9px;
+}
+
+.page--index .header {
+    margin: 0 0 0 0;
+}
+
+.nav a {
+    height: 139px;
+    text-decoration: none;
+    color: #f4f7f7;
+    float: left;
+    margin: 0 9.5px 15px;
+    padding: 42px 40px 0 19px;
+    font-size: 12px;
+}
+
+.nav a:hover {
+    background: linear-gradient(180deg, #dcdcdc, #696969);
+}
+
+/*--------------------------------------------- Content */
+
+.module--content::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*--------------- Module: About */
+
+.module--about {
+    padding: 10px 0 17px 0;
+    line-height: 140%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+/*--------------- Module: Testimonials, Module: Other */
+
+.module--testimonials {
+    width: 410px;
+    float: left;
+}
+
+.module--testimonials a,
+.module--other a {
+    color: #21a4eb;
+    line-height: 200%;
+    font-size: 17px;
+}
+
+.module--testimonials ul,
+.module--other ul {
+    list-style-image: url(../img/dot.gif);
+    margin-left: 18px;
+}
+
+.module--other {
+    width: 360px;
+    float: left;
+}
+
+.module--other h2 {
+    margin-bottom: 5px;
+}
+
+/*---------------- Module: Key */
+
+.module--key {
+    width: 325px;
+    float: left;
+}
+
+/*---------------- Module: Stub */
+
+.module--stub {
+    width: 325px;
+    height: 229px;
+    background: linear-gradient(180deg, #d3f3ca, #5c9954);
+    border-radius: 15px;
+}
+
+/*---------------- Column */
+
+.column ul {
+    list-style-image: url(../img/dot2.gif);
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.column li {
+    margin-bottom: 19px;
+}
+
+.page--services h2 {
+    font-size: 24px;
+    color: #beebb3;
+    margin: 0 0 20px 13px;
+}
+
+.web-developing {
+    width: 257px;
+    margin-left: 12px;
+}
+
+.custom-design {
+    width: 257px;
+}
+
+.hot-job {
+    width: 257px;
+    border-right: 1px dashed #757b82;
+}
+
+/*---------------Module: Our project */
+
+.module--our-projects {
+    width: 520px;
+    float: left;
+}
+
+.window a {
+    color: #25b0eb;
+    margin-right: 72px;
+}
+
+.window img {
+    border: 9px solid #254f5e;
+    width: 230px;
+    height: 150px;
+}
+
+.window img:hover {
+    opacity: 0.5;
+}
+
+.page--project h2 {
+    margin-bottom: 20px;
+}
+
+.page--project .module--testimonials {
+    width: 200px;
+    margin-left: 55px;
+}
+
+.page--project .module--testimonials h2 {
+    margin-bottom: 10px;
+}
+
+/*----------------- Module: Contact-us */
+
+.page--contact h2 {
+    margin-bottom: 15px;
+}
+
+/*---------------Module: New */
+
+.module--new {
+    width: 410px;
+    float: left;
+    line-height: 140%;
+    padding-right: 20px;
+}
+
+.module--new p {
+    margin-bottom: 10px;
+}
+
+/*------------------------------------------------- Footer */
+
+.footer a {
+    color: white;
 }

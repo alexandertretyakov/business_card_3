@@ -3,31 +3,64 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Contact us</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+    <div class="page page--contact">
+        <div class="header">
+            <a class="logo" href="index.htm"><img src="img/logo.png" alt="Логотип"></a>
+            <div class="nav">
+                <a class="features" href="index.htm"><img src="img/menu_1_text.png" alt="На главную">Features</a>
+                <a class="demo" href="services.htm"><img src="img/menu_2_text.png" alt="Сервис">Demo</a>
+                <a class="requirements" href="project.htm"><img src="img/menu_3_text.png" alt="Проэкт">Requirements</a>
+                <a class="support" href="contact.htm"><img src="img/menu_4_text.png" alt="Контакты">Support</a>
+            </div>
+        </div>
 
-    Features
-    Demo
-    Requirements
-    Support
+        <div class="module module--content">
+            <h2>Contact us</h2>
+            <div class="module--contact-us">
+                <form action="#" method="post">
 
-    Contact us
-    Name
-    E-mail
-    Subject
-    Message
-    Submit
+                    <div class="field field--name">
+                        <label>Name:</label>
+                        <input name="name" type="text">
+                    </div>
 
-    &copy; 2007-2008 <a href="#">imgdaddy.com</a>
-    <a href="#">Home</a>
-    <a href="#">Features</a>
-    <a href="#">Demo</a>
-    <a href="#">Requirements</a>
-    <a href="#">Support</a>
-    <a href="#">Order</a>
+                    <div class="field field--email">
+                        <label>E-mail:</label>
+                        <input name="email" type="email">
+                    </div>
 
+                    <div class="field field--subject">
+                        <label>Subject:</label>
+                        <input name="subject" type="text">
+                    </div>
+
+                    <div class="field field--message">
+                        <label>Message:</label>
+                        <textarea name="message" rows="9" cols="48"></textarea>
+                    </div>
+
+                    <div class="actions">
+                        <button type="submit">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; 2007-2008 <a href="#">imgdaddy.com</a><br>
+            <a href="#">Home</a>
+            <a href="index.htm">Features</a>
+            <a href="services.htm">Demo</a>
+            <a href="project.htm">Requirements</a>
+            <a href="contact.htm">Support</a>
+            <a href="#">Order</a>
+        </div>
+    </div>
 </body>
 </html>
