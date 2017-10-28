@@ -78,8 +78,7 @@ label {
 /*------------------------------------------- Header */
 
 .header {
-    background: url("../img/hat.jpg") no-repeat 210px 0;
-    border-bottom: 1px solid white;
+    background: url("../img/hat.jpg") no-repeat 210px 0, url("../img/hr.gif") no-repeat center bottom;
     margin-bottom: 20px;
 }
 
@@ -164,7 +163,7 @@ label {
     padding: 10px 0 17px 0;
     line-height: 140%;
     margin-bottom: 20px;
-    border-bottom: 1px solid white;
+    background: url("../img/hr.gif") no-repeat center bottom;
 }
 
 /*--------------- Module: Testimonials, Module: Other */
@@ -312,12 +311,12 @@ label {
     bottom: 0;
     padding: 8px;
     text-align: center;
-    border-top: 1px solid white;
-    color: white;
+    background: url("../img/hr.gif") no-repeat center top;
+    color: #fff;
 }
 
 .footer a {
-    color: white;
+    color: inherit;
 }
 
 .footer div {
