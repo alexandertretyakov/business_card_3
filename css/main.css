@@ -75,6 +75,10 @@ label {
     margin: 0 8px 0 5px;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 /*------------------------------------------- Header */
 
 .header {
@@ -106,7 +110,7 @@ label {
     text-decoration: none;
     color: #f4f7f7;
     float: left;
-    margin: 0 9.5px 15px;
+    margin: 0 9px 15px;
     padding: 42px 40px 0 19px;
     font-size: 12px;
 }
